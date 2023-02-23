@@ -1,0 +1,177 @@
+/* chi tiết sp */
+
+.description {
+  font-size: 18px;
+}
+
+.sanpham__container {
+  margin: 0 auto;
+  width: 85%;
+  display: block;
+  align-items: center;
+}
+
+.flex-sanpham {
+  display: flex;
+  padding: 15px;
+  width: 85%;
+}
+
+.flex-sp-left {
+  width: 40%;
+  padding: 15px;
+  text-align: center;
+  align-self: center;
+}
+
+.flex-sp-left img {
+  border-radius: 10px;
+  width: 240px;
+  transition: width 1s;
+}
+
+.flex-sp-left img:hover {
+  display: block;
+  position: relative;
+  width: 340px;
+  z-index: 2;
+  margin: 0 auto;
+  border-radius: 20px;
+}
+
+.flex-sp-right {
+  width: 60%;
+  padding: 15px;
+}
+
+.flex-sp-right h1,
+.flex-sp-right h2 {
+  margin: 0;
+}
+
+.plugin-fb {
+  display: block;
+  padding-left: 20px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+/* the Button */
+.btn {
+  transform: translateY(0px);
+  transition: 0.3s linear;
+  background: #49c608;
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  color: #eee;
+  padding: 0;
+  margin: 20px;
+}
+
+.btn:hover {
+  transform: translateY(-4px);
+}
+
+.btn span {
+  font-family: "Farsan", cursive;
+  transition: transform 0.3s;
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 1.2em;
+  margin: 0;
+}
+/* shopping cart icon */
+.btn .price,
+.shopping-cart {
+  background: #333;
+  border: 0;
+  margin: 0;
+}
+
+.btn .price {
+  transform: translateX(-10%);
+  padding-right: 15px;
+}
+
+/* the Icon */
+.btn .shopping-cart {
+  transform: translateX(-100%);
+  position: absolute;
+  background: #333;
+  z-index: 1;
+  left: 0;
+  top: 0;
+}
+
+/* buy */
+.btn .buy {
+  z-index: 3;
+  font-weight: bolder;
+}
+
+.btn:hover .price {
+  transform: translateX(-110%);
+}
+
+.btn:hover .shopping-cart {
+  transform: translateX(0%);
+}
+
+/* size, số lượng */
+
+.size-sl span, .size-sl label {
+  font-weight: bold;
+  font-size: larger;
+}
+.size-sl .size {
+  padding: 5px;
+  margin: 5px;
+}
+
+.size-sl .size button {
+  padding: 5px;
+  font-size: 14px;
+  margin: 5px;
+  background-color: #eee;
+  border-radius: 5px;
+  border: solid blanchedalmond;
+  cursor: pointer;
+}
+
+.size-sl .size button:hover {
+  background-color: #ecc2c2;
+  opacity: 1;
+}
+
+.size-sl .sl {
+  padding: 5px;
+  margin: 5px;
+}
+
+.size-sl > .sl > select {
+  padding: 5px;
+  border-radius: 5px;
+  background-color: #eee;
+  border: solid blanchedalmond;
+}
+
+@media screen and (max-width: 1023px) {
+  .flex-sanpham {
+    flex-direction: column;
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .flex-sp-left {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .flex-sp-right {
+    width: 100%;
+    margin: 0 auto;
+  }
+}

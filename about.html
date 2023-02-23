@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Giới thiệu - miwthShop</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="./css/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="icon" type="image/png" href="./img/logo/logo-no-background.png" />
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous"
+        src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v15.0&appId=1050560209671544&autoLogAppEvents=1"
+        nonce="w3trhNU9"></script>
+    <style>
+        .about-us {
+            width: 100%;
+            padding: 50px 0;
+        }
+
+        .pic {
+            height: auto;
+            width: 302px;
+            border-radius: 10%;
+            transition: all 0.5s;
+        }
+
+        .pic:hover {
+            width: 310px;
+            box-shadow: 0 0 10px 5px #4070f4;
+        }
+
+        .about {
+            width: 1130px;
+            max-width: 85%;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        .text {
+            width: 540px;
+        }
+
+        .text h2 {
+            font-size: 55px;
+            font-weight: 600;
+            margin-bottom: 10px;
+
+        }
+
+        .text h5 {
+            font-size: 22px;
+            font-weight: 500;
+            margin-bottom: 20px;
+        }
+
+        .text span {
+            color: #4070f4;
+        }
+
+        .text p {
+            font-size: 18px;
+            line-height: 25px;
+            letter-spacing: 1px;
+        }
+
+        .data {
+            margin-top: 30px;
+        }
+
+        .hire {
+            font-size: 18px;
+            background: #4070f4;
+            color: #fff;
+            text-decoration: none;
+            border: none;
+            padding: 8px 25px;
+            border-radius: 6px;
+            transition: 0.5s;
+        }
+
+        .hire:hover {
+            background: #000;
+            border: 1px solid #4070f4;
+        }
+
+        @media screen and (max-width: 1023px) {
+            .about {
+                flex-direction: column;
+                width: 80%;
+                margin: 0 auto;
+            }
+
+            .about>.pic {
+                width: 80%;
+                margin: 0 auto;
+            }
+
+            .about>.text {
+                width: 80%;
+                margin: 0 auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <nav class="top__nav">
+                <nav class="top__left">
+                    <div class="logo">
+                        <img src="./img/logo/logo-no-background.png" alt="logo" height="40px" />
+                    </div>
+                    <a href="./index.html">HOME</a>
+                    <div class="dropdown">
+                        <button class="drop__btn">Miwth Collections</button>
+                        <div class="dropdown-content">
+                            <a href="./tet-collections.html">TẾT 2023 Collections</a>
+                            <a href="#">Summer Collections</a>
+                            <a href="#">Miwth Special Collections</a>
+                        </div>
+                    </div>
+                    <a href="./sales.html" style="color: red; font-weight: bold">Sales</a>
+                    <a href="./about.html">Giới thiệu</a>
+                    <a href="./lien-he.html">Liên hệ</a>
+                </nav>
+                <nav class="top__right">
+                    <div class="nav-bar__btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                            <!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                            <path
+                                d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z" />
+                        </svg>
+                    </div>
+                    <div class="nav__overlay"></div>
+                    <nav class="nav__mobile" aria-label="nav for mobile">
+                        <div class="header_wrap_account">
+                            <svg class="svg-account" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="510px" height="510px"
+                                viewBox="0 0 510 510" style="enable-background: new 0 0 510 510" xml:space="preserve">
+                                <g>
+                                    <g id="account-circle">
+                                        <path
+                                            d="M255,0C114.75,0,0,114.75,0,255s114.75,255,255,255s255-114.75,255-255S395.25,0,255,0z M255,76.5
+                                                         c43.35,0,76.5,33.15,76.5,76.5s-33.15,76.5-76.5,76.5c-43.35,0-76.5-33.15-76.5-76.5S211.65,76.5,255,76.5z M255,438.6
+                                                         c-63.75,0-119.85-33.149-153-81.6c0-51,102-79.05,153-79.05S408,306,408,357C374.85,405.45,318.75,438.6,255,438.6z">
+                                        </path>
+                                    </g>
+                                </g>
+                            </svg>
+                            <a href="./login.html">Đăng nhập</a>
+                            <a href="./reg.html">Đăng ký</a>
+                        </div>
+                        <div class="search-container">
+                            <form action="#">
+                                <input type="text" placeholder="Tìm kiếm sản phẩm..." name="search" />
+                                <button type="submit"><i class="fa fa-search"></i></button>
+                            </form>
+                        </div>
+                        <a href="./index.html">HOME</a>
+                        <div class="dropdown">
+                            <button class="drop__btn">Miwth Collections</button>
+                            <div class="dropdown-content">
+                                <a href="./tet-collections.html">TẾT 2023 Collections</a>
+                                <a href="#">Summer Collections</a>
+                                <a href="#">Miwth Special Collections</a>
+                            </div>
+                        </div>
+                        <a href="./sales.html" style="color: red; font-weight: bold">Sales</a>
+                        <a href="./about.html">Giới thiệu</a>
+                        <a href="./lien-he.html">Liên hệ</a>
+                    </nav>
+                    <div class="header_wrap_account">
+                        <svg class="svg-account" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="510px" height="510px"
+                            viewBox="0 0 510 510" style="enable-background: new 0 0 510 510" xml:space="preserve">
+                            <g>
+                                <g id="account-circle">
+                                    <path
+                                        d="M255,0C114.75,0,0,114.75,0,255s114.75,255,255,255s255-114.75,255-255S395.25,0,255,0z M255,76.5
+                                                       c43.35,0,76.5,33.15,76.5,76.5s-33.15,76.5-76.5,76.5c-43.35,0-76.5-33.15-76.5-76.5S211.65,76.5,255,76.5z M255,438.6
+                                                       c-63.75,0-119.85-33.149-153-81.6c0-51,102-79.05,153-79.05S408,306,408,357C374.85,405.45,318.75,438.6,255,438.6z">
+                                    </path>
+                                </g>
+                            </g>
+                        </svg>
+                        <a href="./login.html">Đăng nhập</a>
+                        <a href="./reg.html">Đăng ký</a>
+                    </div>
+                    <div class="gio-hang">
+                        <a aria-label="Giỏ hàng" title="Giỏ hàng" href="./giohang.html">
+                            <span class="box-icon">
+                                <svg class="svg-ico-cart" xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 24 27"
+                                    style="enable-background:new 0 0 24 27;" xml:space="preserve">
+                                    <g>
+                                        <path d="M0,6v21h24V6H0z M22,25H2V8h20V25z"></path>
+                                    </g>
+                                    <g>
+                                        <path d="M12,2c3,0,3,2.3,3,4h2c0-2.8-1-6-5-6S7,3.2,7,6h2C9,4.3,9,2,12,2z">
+                                        </path>
+                                    </g>
+                                </svg>
+                            </span>
+                            </span>
+                            <span class="count-holder">
+                                <span class="count">0</span>
+                            </span>
+                            <span class="box-text">
+                                <span class="txtbl" style="line-height: 40px; ">Giỏ hàng</span>
+                            </span>
+                        </a>
+                    </div>
+                    <div class="search-container">
+                        <form action="#">
+                            <input type="text" placeholder="Tìm kiếm sản phẩm..." name="search" />
+                            <button type="submit"><i class="fa fa-search"></i></button>
+                        </form>
+                    </div>
+                </nav>
+            </nav>
+        </header>
+        <section class="about-us">
+            <div class="about">
+                <img src="./img/hinh_the.jpg" class="pic" alt="about-me">
+                <div class="text">
+                    <h2>Nông Nguyễn Thành</h2>
+                    <h5>Sinh viên <span>FPT Polytechnic</span></h5>
+                    <p>Đây là Website của bài ASM2 được xây dựng bởi Nông Nguyễn Thành - PS 28372. Trang web tham khảo 1 số nguồn code ví dụ như w3,... Mình sẽ để liên kết bên phần Liên kết!</p>
+                    <div class="data">
+                        <a href="/index.html" class="hire">Quay về trang chủ</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="flex-container">
+                <div class="flex-40">
+                    <div class="footer-title">
+                        <h4>Về chúng tôi</h4>
+                    </div>
+                    <div class="footer-content">
+                        <ul>
+                            Đây là Website của bài ASM2 được xây dựng bởi Nông Nguyễn Thành
+                            - PS 28372. Trang web tham khảo 1 số nguồn code ví dụ như w3,...
+                            Mình sẽ để liên kết bên phần Liên kết!
+                        </ul>
+                    </div>
+                </div>
+                <div class="flex-25">
+                    <div class="footer-title">
+                        <h4>Liên kết</h4>
+                    </div>
+                    <div class="footer-content">
+                        <ul>
+                            <li>
+                                <a href="https://www.w3schools.com/w3css/default.asp">W3 School</a>
+                            </li>
+                            <li>
+                                <a href="https://www.codinglabweb.com/">CodingLabWeb</a>
+                            </li>
+                            <li><a href="https://freefrontend.com/css-product-cards/">Free-frontend</a></li>
+                            <li><a href="#">See more...</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="flex-25">
+                    <div class="footer-title">
+                        <h4>Thông tin liên hệ</h4>
+                    </div>
+                    <div class="footer-content">
+                        <ul class="info">
+                            <li>
+                                <span><i class="fa fa-map-marker"></i></span>
+                                <span> Gò Vấp, Thành Phố Hồ Chí Minh<br /></span>
+                            </li>
+                            <li>
+                                <span><i class="fa fa-phone"></i></span>
+                                <span> +84 34 654 2636<br /></span>
+                            </li>
+                            <li>
+                                <span><i class="fa fa-envelope"></i></span>
+                                <span> thanhnnps28372@fpt.edu.vn</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="fanpage">
+                <div class="footer-title">
+                    <h4>Theo dõi chúng tôi trên Facebook</h4>
+                </div>
+                <div class="footer-content">
+                    <div class="fb-page" data-href="https://www.facebook.com/profile.php?id=100089635145422"
+                        data-tabs="" data-width="" data-height="" data-small-header="false"
+                        data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+                        <blockquote cite="https://www.facebook.com/profile.php?id=100089635145422"
+                            class="fb-xfbml-parse-ignore">
+                            <a href="https://www.facebook.com/profile.php?id=100089635145422">Miwth Shop</a>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+            <hr />
+            <div class="bottom__footer">
+                Copyright © 2023 Miwth. Powered by
+                <a href="https://fb.com/thanhnn0106" target="_blank"> Nguyễn Thành</a>
+            </div>
+        </footer>
+    </div>
+    <script type="text/javascript">
+        var Tawk_API = Tawk_API || {},
+            Tawk_LoadStart = new Date();
+        (function () {
+            var s1 = document.createElement("script"),
+                s0 = document.getElementsByTagName("script")[0];
+            s1.async = true;
+            s1.src = "https://embed.tawk.to/63ededfac2f1ac1e20339823/1gpcmj7o7";
+            s1.charset = "UTF-8";
+            s1.setAttribute("crossorigin", "*");
+            s0.parentNode.insertBefore(s1, s0);
+        })();
+    </script>
+</body>
+
+</html>

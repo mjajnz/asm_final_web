@@ -1,0 +1,138 @@
+.container>footer {
+  background-color: rgb(216, 156, 82);
+  font-size: 30px;
+  z-index: 2;
+  position: relative;
+}
+
+  .flex-container {
+    display: flex;
+    /* flex-wrap: wrap; */
+    color: rgb(57, 8, 8);
+    flex-direction: row;
+    /* font-size: 30px; */
+    text-align: center;
+    width: 100%;
+    justify-content: center;
+    padding: 20px;
+  }
+
+  @media (max-width: 1023px) {
+    .flex-container {
+      flex-direction: column;
+      width: 100%;
+    }
+
+    footer .flex-25 .flex-40 {
+      width: 100%;
+    }
+  }
+
+  .flex-25 {
+    /* display: flexbox; */
+    flex: 25%;
+    padding: 10px;
+    text-align: left;
+  }
+
+  .flex-40 {
+    /* display: flexbox; */
+    flex: 50%;
+    padding: 10px;
+    text-align: left;
+  }
+
+  .footer-title h4 {
+    position: relative;
+    color: chocolate;
+    font-weight: bold;
+    margin: 10px;
+    text-align: left;
+  }
+
+  .footer-title h4::before {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background: rgb(171, 60, 60);
+  }
+
+  .footer-content li {
+    display: list-item;
+  }
+
+  .footer-content ul {
+    display: block;
+    padding-inline-start: 0;
+  }
+
+  .footer-content ul li {
+    list-style: none;
+  }
+
+  .footer-content ul li a {
+    text-decoration: none;
+    color: firebrick;
+  }
+
+  .footer-content ul li a:hover {
+    /* cursor: pointer; */
+    color: rgb(224, 31, 31);
+  }
+
+  .fanpage {
+    display: block;
+    text-align: center;
+  }
+
+  .footer {
+    /* border-top: solid red; */
+    /* border-color: red; */
+    /* padding-bottom: 5%; */
+  }
+
+  .bottom__footer {
+    font-size: 20px;
+    line-height: 20px;
+    text-align: center;
+    padding-bottom: 10px;
+  }
+
+  .bottom__footer a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+  }
+
+  .bottom__footer a:hover {
+    text-decoration: underline;
+    color: brown;
+  }
+
+  .subcribe {
+    display: inline-block;
+    margin-top: 10px;
+  }
+  .subcribe input {
+    padding: 14px;
+    border-radius: 5px;
+    font-size: large;
+    background-color: antiquewhite;
+  }
+
+  .subcribe button {
+    padding: 14px;
+    background-color: rgb(220, 191, 157);
+    color: black;
+    border-radius: 10%;
+    height: 52px;
+    font-size: large;
+    font-weight: bold;
+  }
+  .subcribe button:hover {
+    background-color: rgb(226, 207, 186);
+    cursor: pointer;
+  }
